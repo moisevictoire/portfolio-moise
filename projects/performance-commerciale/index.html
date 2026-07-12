@@ -1,0 +1,266 @@
+﻿<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Projet Excel d'analyse de performance commerciale : nettoyage, controle qualite, analyse et dashboard."
+    />
+    <title>Projet Excel | Analyse performance commerciale</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../../style.css" />
+  </head>
+  <body class="simple-case-page">
+    <div class="simple-progress" aria-hidden="true"><span></span></div>
+    <header class="simple-case-header">
+      <div class="container simple-case-header__inner">
+        <a href="../../index.html#projects" class="simple-back-link">Retour au portfolio</a>
+        <a
+          href="https://github.com/moisevictoire/analyse-performance-commerciale"
+          target="_blank"
+          rel="noreferrer"
+          class="simple-back-link"
+        >GitHub</a>
+      </div>
+    </header>
+
+    <main class="simple-case">
+      <section class="container simple-case-intro">
+        <p class="eyebrow">Projet Excel</p>
+        <h1>Analyse performance commerciale</h1>
+        <p>
+          Dans ce projet, j'analyse un fichier de ventes pour suivre la performance
+          commerciale, nettoyer les données, contrôler leur qualité et créer un
+          tableau de bord exploitable.
+        </p>
+        <div class="simple-step-counter" data-step-counter>Étape 1 / 13</div>
+      </section>
+
+      <section class="container simple-step">
+        <div class="simple-step__text">
+          <p>
+            <strong>Dataset brut :</strong> le projet commence avec un fichier de
+            ventes contenant plusieurs colonnes commerciales à analyser.
+          </p>
+          <p>
+            L'objectif est d'obtenir une base fiable avant de construire des
+            indicateurs de suivi et une lecture claire de la performance.
+          </p>
+        </div>
+        <figure class="simple-step__image">
+          <img src="images/dataset-brut.png" alt="Dataset brut du projet performance commerciale" />
+        </figure>
+      </section>
+
+      <section class="container simple-step">
+        <div class="simple-step__text">
+          <p>
+            <strong>Identification des doublons :</strong> pour vérifier les lignes
+            répétées, j'ai d'abord créé une clé de contrôle avec la fonction
+            <strong>CONCATENER</strong> dans Excel.
+          </p>
+          <p>
+            Cette clé regroupe plusieurs colonnes importantes sur une même ligne.
+            Ensuite, j'ai appliqué une <strong>mise en forme conditionnelle des
+            doublons</strong> afin de repérer visuellement les enregistrements à
+            contrôler avant suppression.
+          </p>
+        </div>
+        <figure class="simple-step__image">
+          <img src="images/identification-doublons.png" alt="Identification des doublons avec CONCATENER et mise en forme conditionnelle" />
+        </figure>
+      </section>
+
+      <section class="container simple-step">
+        <div class="simple-step__text">
+          <p>
+            <strong>Suppression des doublons :</strong> après avoir confirmé les
+            doublons, j'ai supprimé les lignes répétées pour conserver une base plus
+            propre.
+          </p>
+          <p>
+            Cette étape évite de fausser le chiffre d'affaires, les quantités ou les
+            indicateurs de performance commerciale.
+          </p>
+        </div>
+        <figure class="simple-step__image">
+          <img src="images/suppression-doublons.png" alt="Suppression des doublons dans Excel" />
+        </figure>
+      </section>
+
+      <section class="container simple-step">
+        <div class="simple-step__text">
+          <p>
+            <strong>Contrôle du nettoyage :</strong> j'ai aussi documenté le nombre
+            de valeurs supprimées pour garder une trace du traitement réalisé.
+          </p>
+          <p>
+            Cela permet de rendre la démarche plus transparente et de justifier les
+            modifications appliquées au dataset.
+          </p>
+        </div>
+        <figure class="simple-step__image">
+          <img src="images/nombre-valeurs-supprimees.png" alt="Nombre de valeurs supprimées après nettoyage" />
+        </figure>
+      </section>
+
+      <section class="container simple-step">
+        <div class="simple-step__text">
+          <p>
+            <strong>Transformation en tableau :</strong> j'ai transformé la plage de
+            données en tableau Excel pour faciliter les filtres, les formules et les
+            analyses.
+          </p>
+          <p>
+            Cette structure rend le fichier plus robuste et plus facile à mettre à
+            jour.
+          </p>
+        </div>
+        <figure class="simple-step__image">
+          <img src="images/transformation-tableau.png" alt="Transformation des données en tableau Excel" />
+        </figure>
+      </section>
+
+      <section class="container simple-step">
+        <div class="simple-step__text">
+          <p>
+            <strong>Traitement des colonnes :</strong> j'ai préparé les champs utiles
+            pour l'analyse commerciale afin de mieux exploiter les données.
+          </p>
+          <p>
+            Cette étape permet de rendre les colonnes plus lisibles et plus adaptées
+            aux tableaux croisés, statistiques et graphiques.
+          </p>
+        </div>
+        <figure class="simple-step__image">
+          <img src="images/traitement-colonnes.png" alt="Traitement des colonnes du projet Excel" />
+        </figure>
+      </section>
+
+      <section class="container simple-step">
+        <div class="simple-step__text">
+          <p>
+            <strong>Table de correspondance :</strong> j'ai utilisé une table de
+            correspondance pour retrouver les informations liées au code produit,
+            comme le nom du produit, le prix de vente et le prix d'achat.
+          </p>
+          <p>
+            Cette étape enrichit la base de ventes et permet ensuite de calculer des
+            indicateurs plus précis sur les produits et la marge.
+          </p>
+        </div>
+        <figure class="simple-step__image">
+          <img src="images/tableau-correspondance-produits-prix.png" alt="Table de correspondance utilisée pour enrichir les colonnes produit et prix" />
+        </figure>
+      </section>
+
+      <section class="container simple-step">
+        <div class="simple-step__text">
+          <p>
+            <strong>Dataset nettoyé :</strong> après les traitements, la base devient
+            plus claire, plus structurée et prête pour l'analyse.
+          </p>
+          <p>
+            C'est à partir de cette version que les indicateurs et visualisations
+            peuvent être construits plus efficacement.
+          </p>
+        </div>
+        <figure class="simple-step__image">
+          <img src="images/dataset-nettoye.png" alt="Dataset nettoyé du projet performance commerciale" />
+        </figure>
+      </section>
+
+      <section class="container simple-step">
+        <div class="simple-step__text">
+          <p>
+            <strong>Statistiques commerciales :</strong> j'ai calculé des indicateurs
+            pour synthétiser la performance globale.
+          </p>
+          <p>
+            Ces statistiques donnent une première lecture des résultats avant la
+            construction du tableau de bord final.
+          </p>
+        </div>
+        <figure class="simple-step__image">
+          <img src="images/stat.png" alt="Statistiques du projet performance commerciale" />
+        </figure>
+      </section>
+
+      <section class="container simple-step">
+        <div class="simple-step__text">
+          <p>
+            <strong>Ventes par produit :</strong> cette analyse permet d'identifier
+            les produits qui contribuent le plus à la performance commerciale.
+          </p>
+          <p>
+            Elle aide à repérer les références fortes et celles qui peuvent nécessiter
+            une action commerciale.
+          </p>
+        </div>
+        <figure class="simple-step__image">
+          <img src="images/ventes-par-produit.png" alt="Analyse des ventes par produit" />
+        </figure>
+      </section>
+
+      <section class="container simple-step">
+        <div class="simple-step__text">
+          <p>
+            <strong>Évolution et catégories :</strong> j'ai analysé la répartition
+            des ventes par catégorie pour comprendre quels segments portent le plus
+            l'activité.
+          </p>
+          <p>
+            Cette visualisation permet de comparer les catégories et de mieux lire la
+            structure du chiffre d'affaires.
+          </p>
+        </div>
+        <figure class="simple-step__image">
+          <img src="images/evolution-ventes-repartition-categorie.png" alt="Evolution des ventes et répartition par catégorie" />
+        </figure>
+      </section>
+
+      <section class="container simple-step">
+        <div class="simple-step__text">
+          <p>
+            <strong>Évolution temporelle :</strong> j'ai observé les ventes par mois
+            et par année pour repérer les tendances et les variations dans le temps.
+          </p>
+          <p>
+            Cette étape aide à comprendre la dynamique commerciale et les périodes les
+            plus performantes.
+          </p>
+        </div>
+        <figure class="simple-step__image">
+          <img src="images/evolution-ventes-mois-annee.png" alt="Evolution des ventes par mois et par année" />
+        </figure>
+      </section>
+
+      <section class="container simple-step">
+        <div class="simple-step__text">
+          <p>
+            <strong>Tableau de bord final :</strong> le dashboard permet de suivre
+            les principaux indicateurs et de visualiser rapidement la performance
+            commerciale.
+          </p>
+          <p>
+            Il rassemble les informations importantes pour faciliter la prise de
+            décision et repérer les points d'amélioration.
+          </p>
+        </div>
+        <figure class="simple-step__image">
+          <img src="images/tableau-bord.png" alt="Tableau de bord final du projet performance commerciale" />
+        </figure>
+      </section>
+    </main>
+    <script src="../../case-dynamic.js"></script>
+  </body>
+</html>
+
+
+
