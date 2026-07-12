@@ -1759,7 +1759,7 @@ h3 {
 
 .skill-card--logo {
   display: grid;
-  grid-template-columns: 58px 1fr;
+  grid-template-columns: 64px minmax(0, 1fr);
   align-items: center;
   gap: 16px;
   min-height: 132px;
@@ -1774,6 +1774,7 @@ h3 {
 
 .skill-card--logo h3 {
   margin: 0 0 4px;
+  line-height: 1.2;
 }
 
 .skill-card--logo p {
@@ -1786,7 +1787,7 @@ h3 {
 .skill-logo {
   display: grid;
   place-items: center;
-  width: 58px;
+  width: 64px;
   aspect-ratio: 1;
   border-radius: 8px;
   background: rgba(255, 255, 255, 0.94);
@@ -1849,12 +1850,21 @@ h3 {
 
 @media (max-width: 620px) {
   .skill-card--logo {
-    grid-template-columns: 52px 1fr;
+    grid-template-columns: 1fr;
+    justify-items: center;
+    gap: 14px;
+    min-height: 0;
+    padding: 22px 18px;
+    text-align: center;
   }
 
   .skill-logo {
-    width: 52px;
+    width: 56px;
+  }
+
+  .skill-card--logo p {
+    max-width: 28rem;
+    font-size: 0.95rem;
   }
 }
-
 
